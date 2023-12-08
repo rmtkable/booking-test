@@ -44,7 +44,7 @@ function Weather() {
               return (
                 <DailyWeather
                   key={i}
-                  dateNum={weatherData.date}
+                  dateNum={weatherData.date_epoch}
                   dayIcon={weatherData.day.condition.icon}
                   tempHigh={weatherData.day.maxtemp_f}
                   tempLow={weatherData.day.mintemp_f}
