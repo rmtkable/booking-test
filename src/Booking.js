@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import DatePicker from "react-datepicker";
+import Weather from './Weather';
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -85,6 +86,7 @@ class Booking extends Component {
           
   render() {
     return (
+      <div>
         <form onSubmit={this.onSubmit}>
             <label>First Name:
                 <input type="text" value={this.state.firstname} onChange={this.onChangeFirstName}/>
@@ -107,6 +109,8 @@ class Booking extends Component {
             </label>
             <button type="submit">Submit</button>
         </form>
+        <Weather/>
+        </div>
     )
   }
 }
